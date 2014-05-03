@@ -2,78 +2,140 @@
 <html>
 
   <head>
+    
     <meta charset='utf-8' />
     <meta http-equiv="X-UA-Compatible" content="chrome=1" />
-    <meta name="description" content="Javascript101 : " />
+    <meta name="description" content="codecamp, charleston digital corridor" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>CODEcamp - Course Title</title>
 
+    <!--*****/////  Stylesheets  /////*****-->
+    
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/reset.css">      
+    <link rel="stylesheet" media="screen" href="stylesheets/deck/extensions/deck.goto.css">
+    <link rel="stylesheet" media="screen" href="stylesheets/deck/extensions/deck.menu.css">
+    <link rel="stylesheet" media="screen" href="stylesheets/deck/extensions/deck.navigation.css">
+    <link rel="stylesheet" media="screen" href="stylesheets/deck/extensions/deck.status.css">
+    <link rel="stylesheet" media="screen" href="stylesheets/deck/extensions/deck.scale.css">
+      
+    <!--*****/////  JavaScript Dependencies  /////*****-->
+    
+    <script src="javascripts/jquery-10.1.2.min.js"></script>
+    <script src="javascripts/modernizr.custom.js"></script>
+    <script src="javascripts/deck/deck.core.js"></script>
+    <script src="javascripts/deck/extensions/deck.menu.js"></script>
+    <script src="javascripts/deck/extensions/deck.goto.js"></script>
+    <script src="javascripts/deck/extensions/deck.status.js"></script>
+    <script src="javascripts/deck/extensions/deck.navigation.js"></script>
+    <script src="javascripts/deck/extensions/deck.scale.js"></script>
 
-    <title>Javascript101</title>
   </head>
 
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/chscodecamp/javascript101">View on GitHub</a>
-
-          <h1 id="project_title">Javascript101</h1>
-          <h2 id="project_tagline"></h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/chscodecamp/javascript101/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/chscodecamp/javascript101/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
-
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
-
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
-
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
-
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
-
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
-
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
-
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
-
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Javascript101 maintained by <a href="https://github.com/chscodecamp">chscodecamp</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
     
+    <header class="index_header">
+      
+      <div class="index_header_wrapper">
+        
+        <ul class="header_left_nav">
+          <li class="active_link"><a href="index.html">Home</a></li>
+          <li><a href="slides/class1.html">Slides</a></li>
+          <li><a href="assignments.html">Assignments</a></li>
+        </ul>
+        
+        <ul class="header_right_nav">
+          <li><a href="screencasts.html">Screencasts</a></li>          
+          <li><a href="downloads.html">Downloads</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+    
+        <a href="index.html">
+          <img class="index_logo" src="images/logo.png" /> 
+        </a>
+      
+      </div>
+      
+    </header>
+    
+    <!--*****/////  Index Content /////*****-->
+    
+    <section class="index_content">
+      
+      <h2 class="course_title">Course Title</h2>
+      
+      <!--*****/////  Content Box 1  /////*****-->
+      
+      <div class="index_left_content">
+        
+        <h2 class="content_title">Box 1 Title</h2>
+        
+        <hr>
+          
+        <p class="content_text">
+          Dicant elaboraret vix ut. Duo alia facilisis id, malis adipisci vix id. Ex usu odio autem luptatum. Oblique accusam voluptua est cu, mel te facer labitur tacimates. Duo vocent explicari consetetur ea, in his civibus urbanitas. Sit no illum intellegam, nam saepe accommodare eu. In sed tritani phaedrum, vix impedit gloriatur reformidans ex, vim quando scripserit id.
+        </p>
+        
+        <p class="content_text">
+          Duo soluta efficiantur necessitatibus te, mel accumsan sensibus repudiare ei. Id sea dicat possit salutandi
+        </p>
+        
+        <a class="read_more" href="#">Read More Text &nbsp; &rarr;</a>
+        
+      </div>
+      
+      <!--*****/////  Content Box 2  /////*****-->
+      
+      <div class="index_right_content">
+        
+        <h2 class="content_title">Box 2 Title</h2>
+        
+        <hr>
+          
+        <p class="content_text">
+          Dicant elaboraret vix ut. Duo alia facilisis id, malis adipisci vix id. Ex usu odio autem luptatum. Oblique accusam voluptua est cu, mel te facer labitur tacimates. Duo vocent explicari consetetur ea, in his civibus urbanitas. Sit no illum intellegam, nam saepe accommodare eu. In sed tritani phaedrum, vix impedit gloriatur reformidans ex, vim quando scripserit id.
+        </p>
+        
+        <p class="content_text">
+          Duo soluta efficiantur necessitatibus te, mel accumsan sensibus repudiare ei. Id sea dicat possit salutandi.
+        </p>
+        
+        <a class="read_more" href="#">Read More Text &nbsp; &rarr;</a>
+        
+      </div>
+      
+      <!--*****/////  Content Box 3 (Bottom Box)  /////*****-->
+      
+      <div class="index_bottom_content">
+        
+        <h2 class="content_title">Box 3 Title</h2>
+        
+        <hr>
+          
+        <p class="content_text">
+          Lorem ipsum dolor sit amet, alia facete noluisse nam an, nec vidit augue eu. Erant volutpat sit te. Ius tota invidunt invenire ei, dicit postea sit et, sea ne explicari iracundia mediocritatem. Congue iriure urbanitas id vis. His inermis deseruisse at, ei cum graeco oblique malorum, tantas discere liberavisse cum cu.
+        </p>
+        
+        <p class="content_text">
+          Eos eripuit pertinax ea, mutat viderer ea sit, aeque option debitis per ad. Vivendo minimum consulatu ne usu, eam consul diceret impedit ut. Ad nec labores detracto, per postea vidisse te, id sed quot probo omnes. Nec dicit vituperata an, graeci diceret necessitatibus mel id, ei graece labore gubergren sit. Ei vis soluta everti consectetuer.
+        </p>
+        
+        <a class="read_more" href="#">Read More Text &nbsp; &rarr;</a>
+        
+      </div>
+      
+    </section>
+    
+    <footer class="footer">
+      <div class="copyright">
+        <h3>Copyright © 2014 Charleston Digital Corridor</h3>
+        <img class="cdc_logo" src="images/cdc_logo.png" />
+      </div>
+    </footer>
+    
+    <!--*****/////  Site Functionality  /////*****-->
+    
+    <script src="javascripts/site.js"></script>
 
   </body>
 </html>
