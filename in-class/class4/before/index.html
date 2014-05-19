@@ -1,0 +1,46 @@
+<html>
+  <head>
+    <style>
+      *, *:after, *:before { box-sizing: border-box }
+      body { background-color: #F4F2F2; color: #333; font-family: "Helvetica Neue", Helvetica }
+      label { display: block; margin-bottom: 5px }
+      input[type="text"] { width: 100%; height: 30px; font-size: 100%; outline: 0; border: 1px solid #d6d6d6; padding: 3px 8px }
+      input[type="text"]:focus { border-color: #0099ff }
+      input[type="checkbox"] { margin-right: 10px }
+      a { cursor: pointer; color: #0099ff }
+      ol { list-style: none; margin: 10px; padding: 0; }
+      li.is-done { text-decoration: line-through; color: #ccc }
+      .hidden { display: none; }
+      .table { display: table; width: 100%; height: 100% }
+      .table-cell { display: table-cell; vertical-align: middle }
+      .questionaire, .todo { width: 400px; margin: 0 auto; padding: 20px; box-shadow: 1px 3px 3px #ccc; border-radius: 8px; background-color: #fff }
+    </style>
+  </head>
+  <body>
+    <div class="table">
+      <div class="table-cell">
+        <div class="questionaire">
+          <label>Enter to-do list title</label>
+          <input type="text" />
+        </div>
+
+        <div class="todo hidden">
+          <h1 class="todo-title"></h1>
+
+          <label>Enter new to-do</label>
+          <input class="todo-input" type="text" />
+
+          <ol class="todo-list"></ol>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      window.onload = function() {
+        var script = document.createElement('script');
+        script.src = 'app.js';
+        document.documentElement.firstChild.appendChild(script);
+      }
+    </script>
+  </body>
+</html>
