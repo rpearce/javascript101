@@ -15,9 +15,10 @@
   };
 
   var handleCheckboxDone = function(e) {
-    console.log(e);
     if (e.target.checked) {
-      console.log('checked');
+      e.target.parentNode.className = 'is-done';
+    } else {
+      e.target.parentNode.className = '';
     }
   };
 
@@ -30,13 +31,12 @@
           todoList = document.querySelector('.todo-list');
 
       todoListItemDone.type = 'checkbox';
-      todoListItemDone.className = 'todo-list-item-done';
-      todoListItemDone.addEventListener('click', handleCheckboxDone); // NOTE: this listener isn't working!
+      todoListItemDone.addEventListener('change', handleCheckboxDone);
 
-      todoListItem.appendChild(todoListItemDone);
       todoListItem.innerHTML += text;
-
       todoList.appendChild(todoListItem);
+
+      todoListItem.insertBefore(todoListItemDone, todoListItem.firstChild);
 
       e.target.value = '';
     }
